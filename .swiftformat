@@ -1,0 +1,6 @@
+--indent 4
+--indentcase true
+--wraparguments before-first
+--wrapcollections before-first
+--commas always
+--stripunusedargs closure-only

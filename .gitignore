@@ -1,3 +1,4 @@
+# Xcode
 .DS_Store
 /.build
 /Packages
@@ -6,3 +7,30 @@ DerivedData/
 .swiftpm/configuration/registries.json
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
 .netrc
+
+# Swift Package Manager
+.swiftpm/
+Package.resolved
+
+# Xcode project files
+*.xcodeproj/
+*.xcworkspace/
+
+# IDE files
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
