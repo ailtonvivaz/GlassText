@@ -133,3 +133,29 @@ public struct GlassText: View {
         }
     }
 }
+
+@available(iOS 26.0, macOS 26.0, tvOS 26.0, watchOS 26.0, *)
+@available(visionOS, unavailable)
+#Preview("Glass Text", traits: .fixedLayout(width: 1200, height: 630)) {
+    HStack {
+        GlassText("Glass", glass: .clear.tint(.blue.opacity(0.25)))
+        GlassText("Text", glass: .clear.tint(.green.opacity(0.5)))
+    }
+    .font(.system(size: 200, design: .serif))
+    .fontWeight(.bold)
+    .frame(width: 1200, height: 630)
+    .background {
+        AsyncImage(
+            url: URL(
+                string: "https://place.abh.ai/s3fs-public/placeholder/DSC_0287_400x400.JPG")!
+        ) { image in
+            image
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+
+        } placeholder: {
+            Color.gray.opacity(0.2)
+        }
+    }
+}

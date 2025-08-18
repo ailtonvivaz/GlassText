@@ -1,5 +1,9 @@
 # GlassText
 
+<p align="center">
+    <img src="assets/preview.png" alt="GlassText Preview" width="800" />
+</p>
+
 SwiftUI library that creates glass morphism text effects using the latest SwiftUI glass effect API.
 
 ## Features

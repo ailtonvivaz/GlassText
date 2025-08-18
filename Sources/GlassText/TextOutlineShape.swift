@@ -57,9 +57,9 @@ struct TextOutlineShape: Shape {
             // Alignment offset
             let startX: CGFloat
             switch alignment {
-            case .leading: startX = 0
-            case .center: startX = (maxWidth - lineWidth) / 2
-            case .trailing: startX = maxWidth - lineWidth
+                case .leading: startX = 0
+                case .center: startX = (maxWidth - lineWidth) / 2
+                case .trailing: startX = maxWidth - lineWidth
             }
 
             // Iterate glyph runs (handles complex scripts, clusters & ligatures)
@@ -79,7 +79,7 @@ struct TextOutlineShape: Shape {
                 let attrs = CTRunGetAttributes(run) as NSDictionary
                 let runFont = (attrs[kCTFontAttributeName] as! CTFont)
 
-                for i in 0..<glyphCount {
+                for i in 0 ..< glyphCount {
                     let g = glyphs[i]
                     guard let gPath = CTFontCreatePathForGlyph(runFont, g, nil) else { continue }
                     var t = CGAffineTransform(
